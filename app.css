@@ -1,0 +1,245 @@
+:root {
+	--background-color: #2594ee;
+	--forum-background-color: #0f0be2;
+	--letter-color: #ddcdcd;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 2px solid red;
+	width: 100vw;
+	height: 100vh;
+	background-color: var(--background-color);
+}
+form {
+	border: 2px solid blue;
+	position: relative;
+	padding: 20px;
+	background-color: var(--forum-background-color);
+	color: var(--letter-color);
+}
+#email,
+#password {
+	background-color: var(--forum-background-color);
+	border: none;
+	border-bottom: 1px solid var(--letter-color);
+	color: var(--letter-color);
+	position: absolute;
+
+	transition: all 2s;
+}
+label {
+	transition: all 5s;
+}
+input {
+	position: fixed;
+}
+.password-container,
+.email-container {
+	display: flex;
+	flex-direction: column;
+	padding: 30px 30px 30px 0;
+	border: 5px solid red;
+	position: relative;
+	height: 150px;
+	padding-top: 80px;
+}
+.email-container label,
+.password-container label {
+	z-index: 100;
+}
+.email-label {
+	margin-bottom: -80px;
+}
+.email-label span {
+	transition: all 2s;
+}
+.email-label span {
+	transition: all 2s;
+	background-color: red;
+}
+
+.email-label span:nth-child(1).move-up {
+	position: absolute;
+	transition: top 2s;
+	top: 30px;
+	left: 0px;
+	color: green;
+}
+
+.email-label span:nth-child(2).move-up {
+	position: absolute;
+	top: 30px;
+	left: 14px;
+	color: green;
+	transition: top 2s;
+}
+
+.email-label span:nth-child(3).move-up {
+	position: absolute;
+	transition: top 2s;
+	top: 30px;
+	left: 30px;
+	color: green;
+}
+
+.email-label span:nth-child(4).move-up {
+	position: absolute;
+	transition: top 2s;
+	top: 30px;
+	left: 40px;
+	color: green;
+}
+
+.email-label span:nth-child(5).move-up {
+	position: absolute;
+	transition: top 2s;
+	top: 30px;
+	left: 45px;
+	color: green;
+}
+
+.email-label span:nth-child(1).move-down {
+	color: blue;
+	transition: top 2s ease-in-out;
+}
+
+.email-label span:nth-child(2).move-down {
+	color: blue;
+	transition: top 2s ease-in-out;
+}
+
+.email-label span:nth-child(3).move-down {
+	color: blue;
+	transition: top 2s ease-in-out;
+}
+
+.email-label span:nth-child(4).move-down {
+	color: blue;
+	transition: all 1s;
+	transition: top 2s ease-in-out;
+}
+
+.email-label span:nth-child(5).move-down {
+	color: blue;
+	transition: all 1s;
+	transition: top 2s ease-in-out;
+}
+.password-label {
+	margin-bottom: -80px;
+}
+
+.password-label span {
+	transition: all 2s;
+	background-color: red;
+}
+
+.password-label span:nth-child(1).move-up {
+	position: absolute;
+	transition: top 2s;
+	top: 30px;
+	left: 0px;
+	color: green;
+}
+
+.password-label span:nth-child(2).move-up {
+	position: absolute;
+	top: 30px;
+	left: 14px;
+	color: green;
+	transition: top 2s;
+}
+
+.password-label span:nth-child(3).move-up {
+	position: absolute;
+	transition: top 2s;
+	top: 30px;
+	left: 25px;
+	color: green;
+}
+
+.password-label span:nth-child(4).move-up {
+	position: absolute;
+	transition: top 2s;
+	top: 30px;
+	left: 35px;
+	color: green;
+}
+
+.password-label span:nth-child(5).move-up {
+	position: absolute;
+	transition: top 2s;
+	top: 30px;
+	left: 45px;
+	color: green;
+}
+.password-label span:nth-child(6).move-up {
+	position: absolute;
+	transition: top 2s;
+	top: 30px;
+	left: 55px;
+	color: green;
+}
+.password-label span:nth-child(7).move-up {
+	position: absolute;
+	transition: top 2s;
+	top: 30px;
+	left: 65px;
+	color: green;
+}
+.password-label span:nth-child(8).move-up {
+	position: absolute;
+	transition: top 2s;
+	top: 30px;
+	left: 75px;
+	color: green;
+}
+
+.password-label span:nth-child(1).move-down {
+	color: blue;
+	transition: top 2s ease-in-out;
+}
+
+.password-label span:nth-child(2).move-down {
+	color: blue;
+	transition: top 2s ease-in-out;
+}
+
+.password-label span:nth-child(3).move-down {
+	color: blue;
+	transition: top 2s ease-in-out;
+}
+
+.password-label span:nth-child(4).move-down {
+	color: blue;
+	transition: all 1s;
+	transition: top 2s ease-in-out;
+}
+
+.password-label span:nth-child(5).move-down {
+	color: blue;
+	transition: all 1s;
+	transition: top 2s ease-in-out;
+}
+.password-label span:nth-child(6).move-down {
+	color: blue;
+	transition: all 1s;
+	transition: top 2s ease-in-out;
+}
+.password-label span:nth-child(7).move-down {
+	color: blue;
+	transition: all 1s;
+	transition: top 2s ease-in-out;
+}
+.password-label span:nth-child(8).move-down {
+	color: blue;
+	transition: all 1s;
+	transition: top 2s ease-in-out;
+}
